@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgba(241, 241, 247, 1);
+  --primary-color: rgba(40, 118, 188);
+  --dark-gray: #a8a8a8;
+  --light-gray: #cccccc;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+}

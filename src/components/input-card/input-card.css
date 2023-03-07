@@ -1,0 +1,38 @@
+.form-group {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: .5rem;
+  background-color: white;
+}
+
+.form-label {
+  display: flex;
+  color: var(--primary-color);
+  align-items: flex-start;
+}
+
+.form-label .vertical-divider {
+  width: 2px;
+  background-color: var(--dark-gray);
+  height: 1rem;
+  margin: 0 .5rem 0 .5rem;
+}
+
+.form-label .label-icon {
+  width: 1rem;
+}
+
+.form-label .label-icon img {
+  filter: invert(32%) sepia(99%) saturate(789%) hue-rotate(179deg) brightness(96%) contrast(82%);
+}
+
+.form-label .label-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label .label-input label {
+  font-size: 14px;
+}

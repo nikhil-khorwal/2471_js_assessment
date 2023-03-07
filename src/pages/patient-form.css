@@ -1,0 +1,150 @@
+.form-background {
+
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 900px;
+}
+
+.form-title {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.patient-form .form-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
+}
+
+.patient-form .form-button {
+  width: 100%;
+  padding: 16px 16px 0 0;
+  text-align: end;
+}
+
+.patient-form input,
+.patient-form textarea {
+  border: none;
+  outline: none;
+}
+
+.patient-form input[type="text"],
+.patient-form textarea {
+  width: 100%;
+  resize: none;
+}
+
+.about-age label {
+  margin: 0 1rem 0 .2rem;
+}
+
+.patient-form input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 70px;
+  width: 70px;
+}
+
+.form-images {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-right: 1rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.upload-image img {
+  width: 20px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(110deg) brightness(107%) contrast(101%);
+}
+
+
+.upload-image {
+  height: 70px;
+  width: 70px;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploaded-images {
+  display: flex;
+}
+
+.uploaded-image {
+  position: relative;
+  margin-left: 10px;
+  height: 70px;
+  width: 70px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+}
+
+.uploaded-image .editicon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(110deg) brightness(107%) contrast(101%);
+
+}
+
+.uploaded-image .image {
+
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.errorMsg {
+  margin-top: .5rem;
+  text-align: end;
+  color: rgba(255, 0, 0, 0.7);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .form-content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .patient-form .form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-content {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .patient-form .form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+}
